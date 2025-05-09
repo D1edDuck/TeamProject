@@ -8,3 +8,18 @@
   font-size: 2rem;
   font-family: sans-serif;
 }
+
+html {
+  animation: loader 5s ease .7s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100;
+  }
+}
