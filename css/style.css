@@ -16,6 +16,7 @@ html {
 
 @keyframes loader {
   0% {
+    background: linear-gradient(grey, blue);
     opacity: 0;
   }
 
