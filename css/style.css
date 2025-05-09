@@ -7,6 +7,9 @@
   background: linear-gradient(blue, grey);
   font-size: 2rem;
   font-family: sans-serif;
+  animation: gradient 5s ease .7s;
+  animation-fill-mode: backwards;
+  color: #fff;
 }
 
 html {
@@ -16,11 +19,19 @@ html {
 
 @keyframes loader {
   0% {
-    background: linear-gradient(grey, blue);
     opacity: 0;
   }
 
   100% {
     opacity: 100;
   }
+}
+
+@keyframes gradient {
+	0% {
+		background: linear-gradient(grey, blue);
+	}
+	100% {
+		background: linear-gradient(blue, grey);
+	}
 }
